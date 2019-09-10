@@ -1,0 +1,35 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/**
+ * @var $block \Magento\Framework\View\Element\Template
+ */
+$checkoutLink = $block->getBaseUrl() . "checkout";
+?>
+<div class="top_links">
+    <div class="custom_container">
+        <div class="top_nav">
+            <div class="top_nav__left">
+                <ul>
+                    <li><a href="<?= $checkoutLink; ?>"><?= __('Gratis levering en retournering'); ?></a></li>
+                    <li><a href="#"><?= __('Wij bezorgen wanneer het jou uitkomt'); ?></a></li>
+                    <li><a href="#"><?= __('14 dagen bedenktijd'); ?></a></li>
+                    <li><a href="#"><?= __('2 jaar garantie'); ?></a></li>
+                </ul>
+            </div>
+            <div class="top_nav__right">
+                <ul>
+                    <li><a href="#"><?= __('Beoordelingen'); ?></a></li>
+                    <li><a href="#"><?= __('Zakelijk bestellen?'); ?></a></li>
+                    <li><a href="<?= $checkoutLink; ?>"><?= __('Klantenservice'); ?></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
